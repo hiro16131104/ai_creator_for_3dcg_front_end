@@ -1,0 +1,16 @@
+{
+    "comment": "Reactアプリの設定ファイル",
+    "environment": {
+        "comment": "本番環境は'production'、開発環境は'development'",
+        "value": "development"
+    },
+    "backEndApiUrl": {
+        "comment": "FlaskAPIのURL",
+        "production": "https://ai-creator-for-3dcg-back-end.hirohiro-web-app.net",
+        "development": "http://localhost:5050"
+    },
+    "initCGCode": {
+        "comment": "最初に表示するCGのコード",
+        "value": "import * as THREE from 'three'; const scene = new THREE.Scene(); const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000); camera.position.z = 5; const renderer = new THREE.WebGLRenderer(); renderer.setSize(window.innerWidth, window.innerHeight); document.body.appendChild(renderer.domElement); const bgTexture = new THREE.TextureLoader().load('./image/starrySky.jpg'); scene.background = bgTexture; const geometry = new THREE.SphereGeometry(1, 32, 32); const texture = new THREE.TextureLoader().load('./image/textureEarth.jpg'); const material = new THREE.MeshBasicMaterial({ map: texture }); const earth = new THREE.Mesh(geometry, material); scene.add(earth); function animate() { requestAnimationFrame(animate); earth.rotation.y += 0.01; renderer.render(scene, camera); } animate();"
+    }
+}
