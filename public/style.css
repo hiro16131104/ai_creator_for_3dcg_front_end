@@ -1,16 +1,18 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: "Noto Sans JP";
+    src: url("./font/NotoSansJP-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 200 300 400 500 600 700 800 900;
+}
+
 /* すべての要素に共通して適用するcss */
 * {
     padding: 0;
     margin: 0;
     /* borderの太さも含めて親要素の中に収まるよう、サイズを調整する */
     box-sizing: border-box;
-}
-
-body {
     font-family:
-        /* importしたフォント */
         "Noto Sans JP",
         "Helvetica Neue",
         "Helvetica",
@@ -20,6 +22,9 @@ body {
         "Yu Gothic",
         "Meiryo",
         sans-serif;
+}
+
+body {
     font-size: 16px;
     color: #666666;
     line-height: 1.5;
