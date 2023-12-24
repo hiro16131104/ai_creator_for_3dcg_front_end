@@ -188,7 +188,8 @@ export const App = () => {
       // javascriptのソースコードをstateに反映
       setSourceCode({
         display: (
-          `// バージョンr132のThree.jsを使用\n` +
+          // 2023.12.24 バージョンアップ（@0.132.0 → @0.160.0）
+          `// バージョンr160のThree.jsを使用\n` +
           (webApiCall.responseData.content as string)
         ),
         execution: webApiCall.responseData.sourceCode as string,
