@@ -246,7 +246,7 @@ export const App = () => {
                 "CGを作成中です。しばらくお待ち下さい..."
             }
             textBox={{ ...textBox, width: "60%", }}
-            placeholder={`（例）星空（${maxLength.input}文字以内）`}
+            placeholder={`（例）森林（${maxLength.input}文字以内）`}
             afterText="のCGを創る"
             maxLength={maxLength.input}
             value={inputValue}

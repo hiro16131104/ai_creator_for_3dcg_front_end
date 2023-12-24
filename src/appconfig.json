@@ -6,7 +6,7 @@
     },
     "backEndApiUrl": {
         "comment": "FlaskAPIのURL",
-        "production": "https://ai-creator-for-3dcg-back-end.hirohiro-web-app.net",
+        "production": "https://obrgntsc3nbarkw3ybvthohkfu0cxdxg.lambda-url.ap-northeast-1.on.aws",
         "development": "http://localhost:5050"
     },
     "initCGCode": {

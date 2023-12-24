@@ -1,10 +1,5 @@
 @charset "utf-8";
-
-@font-face {
-    font-family: "Noto Sans JP";
-    src: url("./font/NotoSansJP-VariableFont_wght.ttf") format("truetype");
-    font-weight: 100 200 300 400 500 600 700 800 900;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
 /* すべての要素に共通して適用するcss */
 * {
