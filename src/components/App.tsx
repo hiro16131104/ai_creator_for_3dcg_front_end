@@ -203,6 +203,7 @@ export const App = () => {
     catch (error) {
       console.log(error)
       alert("エラーが発生しました。")
+      window.location.reload()
     }
     finally {
       setIsLoading(false)
